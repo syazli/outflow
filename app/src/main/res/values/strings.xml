@@ -1,3 +1,58 @@
 <resources>
     <string name="app_name">OutFlow</string>
+
+    <!--screen-->
+    <string name="main_screen">Main</string>
+    <string name="list_screen">List</string>
+    <string name="add_screen">Add</string>
+
+    <!--Main Screen-->
+    <string name="main_label">Expense Tracker</string>
+    <string name="main_desc">Track every ringgit. \nKnow exactly where\nyour money goes.</string>
+    <string name="main_get_started">Get Started</string>
+    <string name="main_privacy">No account needed. Everything stays on your device.</string>
+
+    <!--List Screen-->
+    <string name="list_add_transaction">Add Transaction</string>
+    <string name="list_transactions_label">TRANSACTIONS</string>
+    <string name="list_total_balance">TOTAL BALANCE</string>
+    <string name="list_income">Income</string>
+    <string name="list_expense">Expense</string>
+    <string name="list_empty_title">No transactions yet</string>
+    <string name="list_empty_desc">Tap the + button to add\nyour first transaction</string>
+    <string name="list_add_expense">Add Expense</string>
+    <string name="list_add_income">Add Income</string>
+
+    <!--List Screen-->
+    <string name="add_category">Please select a category</string>
+    <string name="add_amount">Please enter an amount</string>
+    <string name="add_amount_valid">Please enter a valid amount</string>
+
+    <!-- Add Screen -->
+    <string name="add_title_expense">Add Expense</string>
+    <string name="update_title_expense">Update Expense</string>
+    <string name="add_title_income">Add Income</string>
+    <string name="update_title_income">Update Income</string>
+
+    <string name="category">Category</string>
+    <string name="amount">Amount (RM)</string>
+    <string name="add_date">Date</string>
+    <string name="add_note">Note (optional)</string>
+    <string name="add_save">Save</string>
+    <string name="add_update">Update</string>
+    <string name="category_food">Food</string>
+    <string name="category_transport">Transport</string>
+    <string name="category_shopping">Shopping</string>
+    <string name="category_bills">Bills</string>
+    <string name="category_entertainment">Entertainment</string>
+    <string name="category_others">Others</string>
+
+    <!--Delete-->
+    <string name="delete_title">Delete transaction</string>
+    <string name="delete_desc">Are you sure you want to delete this transaction?</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+
+
 </resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="spacing_small">8dp</dimen>
+    <dimen name="spacing_medium">16dp</dimen>
+    <dimen name="spacing_large">28dp</dimen>
+    <dimen name="spacing_xlarge">36dp</dimen>
+    <dimen name="spacing_xxlarge">72dp</dimen>
+
+    <dimen name="text_label">11sp</dimen>
+    <dimen name="text_body">17sp</dimen>
+    <dimen name="text_button">16sp</dimen>
+    <dimen name="text_caption">12sp</dimen>
+    <dimen name="text_title">76sp</dimen>
+
+    <dimen name="button_height">56dp</dimen>
+    <dimen name="button_radius">16dp</dimen>
+    <dimen name="accent_line_height">2dp</dimen>
+    <dimen name="top_glow_height">280dp</dimen>
+</resources>
