@@ -1,12 +1,12 @@
 package my.com.syazli.outflow.presentation.screen.add
 
 import androidx.compose.runtime.saveable.Saver
-import my.com.syazli.outflow.data.local.entity.CategoryEntity
+import my.com.syazli.outflow.domain.model.Category
 
 data class AddUIState(
     val type: String = "expense",
-    val categories: List<CategoryEntity> = emptyList(),
-    val selectedCategory: CategoryEntity? = null,
+    val categories: List<Category> = emptyList(),
+    val selectedCategory: Category? = null,
     val amount: String = "",
     val date: Long = System.currentTimeMillis(),
     val note: String = "",

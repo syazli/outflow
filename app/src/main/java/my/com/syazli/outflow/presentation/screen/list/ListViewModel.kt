@@ -10,8 +10,8 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
-import my.com.syazli.outflow.data.local.entity.TransactionEntity
 import my.com.syazli.outflow.data.repository.TransactionRepository
+import my.com.syazli.outflow.domain.model.Transactions
 import javax.inject.Inject
 
 @HiltViewModel
@@ -42,7 +42,7 @@ class ListViewModel @Inject constructor(private val transactionRepository: Trans
     fun onLoadingDismiss() {
         _state.update { it.copy(isDoneLoading = false) }
     }
-     fun deleteTransaction(transaction: TransactionEntity) {
+     fun deleteTransaction(transaction: Transactions) {
         viewModelScope.launch {
             transactionRepository.deleteTransaction(transaction)
         }

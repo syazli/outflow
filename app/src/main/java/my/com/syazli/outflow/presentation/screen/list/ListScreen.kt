@@ -65,7 +65,6 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.draw.rotate
-import my.com.syazli.outflow.data.local.entity.TransactionEntity
 import my.com.syazli.outflow.utils.FormatHelper
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
@@ -76,6 +75,7 @@ import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.window.Dialog
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+import my.com.syazli.outflow.domain.model.Transactions
 import my.com.syazli.outflow.presentation.component.LoadingDialog
 import kotlin.math.roundToInt
 
@@ -182,7 +182,7 @@ fun ListScreen(onAddClick: (String) -> Unit, onEdit: (Int) -> Unit, viewModel: L
 
 
 @Composable
-fun SwipeableItem(transaction: TransactionEntity, onDeleteClick:() -> Unit, onEdit: () -> Unit) {
+fun SwipeableItem(transaction: Transactions, onDeleteClick:() -> Unit, onEdit: () -> Unit) {
     val coroutineScope = rememberCoroutineScope()
     val offsetX = remember { Animatable(0f) }
     var isRevealed by remember { mutableStateOf(false) }
@@ -426,7 +426,7 @@ private fun SummaryChip(label: String, amount: String, color: Color, modifier: M
 }
 
 @Composable
-private fun TransactionItem(transaction: TransactionEntity, modifier: Modifier = Modifier) {
+private fun TransactionItem(transaction: Transactions, modifier: Modifier = Modifier) {
     val isIncome = transaction.type == "income"
     val amountColor = if (isIncome) colorResource(R.color.green) else colorResource(R.color.red)
     val amountPrefix = if (isIncome) "+" else "-"
